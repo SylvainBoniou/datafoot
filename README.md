@@ -1,61 +1,98 @@
-DATAFOOT
+# DataFoot 
 
-Courte description du projet : ce qu’il fait et à quoi il sert.
+Analyse des performances des clubs et joueurs de Ligue. 
 
-📦 Installation
+## 📦 Installation
 
 Cloner le repo :
 
+```bash
 git clone https://github.com/SylvainBoniou/datafoot.git
 cd REPO
+```
 
 Créer un environnement virtuel :
 
+```bash
 python -m venv venv
+```
 
 Activer l’environnement :
 
-Mac / Linux
+**Mac / Linux**
 
+```bash
 source venv/bin/activate
+```
 
-Windows
+**Windows**
 
+```bash
 venv\Scripts\activate
+```
 
 Installer les dépendances :
 
+```bash
 pip install -r requirements.txt
-▶️ Lancer le projet
+```
+
+---
+
+## ▶️ Lancer le projet
+
+```bash
 python app.py
+```
 
-ou
+---
 
-python src/app.py
-🧪 Tests
+## 🧪 Tests
+
+```bash
 pytest
-📁 Structure du projet
+```
+
+---
+
+## 📁 Structure du projet
+
+```
 project/
 │
-├── src/
-│   ├── main.py
-│   └── modules/
+├──assets/
+├──config/
+├──data/
+│   ├── processed/
+│   └── raw/
+│   └── test/
+├──src/
+│   ├── dashboard/
+│   └── pipelines/
+│   └── processing/
+│   └── scrapping/
 │
-├── data/
-├── tests/
+├── app.py
 ├── requirements.txt
 ├── README.md
 └── .gitignore
+```
 
-⚙️ Variables d’environnement
+---
 
-Créer un fichier .env :
+## ⚙️ Variables d’environnement
 
+Créer un fichier `.env` :
+
+```
 API_KEY=xxxx
+```
 
 Installer python-dotenv si besoin.
 
-👤 Auteur
+---
 
-SylvainBoniou
-GitHub : https://github.com/USER
+## 👤 Auteur
+
+Sylvain BONIOU
+GitHub : [https://github.com/SylvainBoniou](https://github.com/SylvainBoniou)
